@@ -11,5 +11,9 @@ Delete all email from mail queue:
 ```sh
 postsuper -d ALL
 ```
+View connections from log on fly:
+```sh
+tail -f /var/log/maillog | grep "connect from"
+```
 based on mysql settings
 https://www.debuntu.org/how-to-virtual-emails-accounts-with-postfix-and-dovecot/
