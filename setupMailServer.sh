@@ -8,6 +8,9 @@ yum install openssl
 #openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /mail.key -out /mail.crt
 
 yum install opendkim
+#vim /etc/opendkim/KeyTable
+#vim /etc/opendkim/keys/mytinymart.com/default
+#vim /etc/opendkim/keys/mytinymart.com/default.txt
 
 service dovecot restart
 service postfix restart
