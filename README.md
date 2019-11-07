@@ -7,6 +7,10 @@ List emails in server queue:
 ```sh
 mailq
 ```
+Send queue imidiently:
+```sh
+postqueue -f
+```
 Delete all email from mail queue:
 ```sh
 postsuper -d ALL
